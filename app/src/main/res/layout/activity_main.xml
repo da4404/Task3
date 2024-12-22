@@ -8,10 +8,23 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Back to the future"
-        tools:layout_editor_absoluteX="150dp"
-        tools:layout_editor_absoluteY="356dp" />
+        android:layout_width="124dp"
+        android:layout_height="26dp"
+        android:text="Frozen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView_Frozen"
+        android:layout_width="516dp"
+        android:layout_height="231dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fruzan" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
