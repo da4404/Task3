@@ -7,37 +7,16 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="174dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="16dp"
-        android:text="Frozen"
-        android:textSize="25dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.599"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="716dp"
         android:layout_height="286dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="12dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/fruzan" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="217dp"
-        android:layout_height="35dp"
-        android:text="the best movie in the world"
-        android:textSize="15dp"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -157,8 +136,8 @@
         android:layout_height="68dp"
         android:layout_marginTop="20dp"
         android:text="The plot of the film follows two princess sisters in the kingdom of Arendal: Elsa, the eldest sister, was born with magical powers that allow her to create ice and snow and control them (at first only partially); And Anna, the young sister who is brave and optimistic who always thinks positively."
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/text_Tittle_summary" />
 
     <androidx.constraintlayout.widget.Guideline
@@ -173,15 +152,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="395dp" />
-
-    <ImageView
-        android:id="@+id/imageViewstar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:srcCompat="@android:drawable/btn_star_big_on"
-        tools:layout_editor_absoluteY="298dp" />
+        app:layout_constraintGuide_end="13dp" />
 
     <TextView
         android:id="@+id/star"
@@ -192,10 +163,42 @@
         app:layout_constraintStart_toStartOf="@+id/imageViewstar"
         app:layout_constraintTop_toBottomOf="@+id/imageViewstar" />
 
-    <androidx.constraintlayout.widget.Barrier
-        android:id="@+id/barrier"
+    <ImageView
+        android:id="@+id/imageViewstar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:barrierDirection="top" />
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.437"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="right"
+        app:constraint_referenced_ids="textView2,textView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="174dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:text="Frozen"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.599"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="192dp"
+        android:layout_height="36dp"
+        android:text="the best movie in the world"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
